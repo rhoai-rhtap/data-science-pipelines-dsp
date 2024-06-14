@@ -1,7 +1,7 @@
 name: Build images for PRs
 on:
   workflow_run:
-    workflows: ["Trigger build images for PRs"]
+    workflows: ["Trigger PR CI"]
     types:
       - completed
 env:
