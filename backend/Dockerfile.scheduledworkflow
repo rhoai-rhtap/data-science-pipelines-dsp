@@ -24,6 +24,12 @@ ARG SOURCE_CODE
 ## Switch to root as required for some operations
 USER root
 
+RUN subscription-manager repos --enable rhel-8-for-x86_64-appstream-rpms && \
+    yum -y update && \
+    yum -y install google-chrome-stable && \
+    # Remove entitlements and Subscription Manager configs
+    rm -rf /etc/pki/entitlement
+
 RUN dnf upgrade -y && \
     dnf install -y bash \
                    git \
