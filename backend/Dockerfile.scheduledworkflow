@@ -24,20 +24,6 @@ ARG SOURCE_CODE
 ## Switch to root as required for some operations
 USER root
 
-# Add Google Chrome repository configuration
-COPY google-chrome.repo /etc/yum.repos.d/google-chrome.repo
-
-# Install Google Chrome Stable and dependencies
-RUN yum -y install google-chrome-stable && \
-    rm -f /etc/yum.repos.d/google-chrome.repo && \
-    yum clean all
-
-# Install Chrome Driver
-COPY install-chrome-driver.sh .
-RUN chmod +x install-chrome-driver.sh
-RUN ./install-chrome-driver.sh
-
-
 RUN dnf upgrade -y && \
     dnf install -y bash \
                    git \
