@@ -24,8 +24,16 @@ ARG SOURCE_CODE
 ## Switch to root as required for some operations
 USER root
 
-RUN dnf upgrade -y && \
-    dnf install -y bash \
+# Register the system
+subscription-manager register --org $(cat "/activation-key/orgid") --activationkey $(cat "/activation-key/activationkey")
+
+# Enable the necessary repositories
+subscription-manager repos --enable codeready-builder-for-rhel-8-x86_64-rpms \
+                           --enable rhel-8-for-x86_64-appstream-rpms
+
+# Upgrade existing packages, install new packages, and clean up
+dnf upgrade -y && \
+    dnf -y install bash \
                    git \
                    openssh \
                    gcc && \
