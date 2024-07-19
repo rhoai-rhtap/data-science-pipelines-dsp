@@ -24,7 +24,10 @@ FROM registry.access.redhat.com/ubi8/go-toolset:1.21 as builder
 ## Switch to root as required for some operations
 USER root
 
-RUN subscription-manager register --org 15177711 --activationkey rhoai-acivation-key && \
+ENV ORG_ID=15177711
+ENV ACTIVATION_KEY=rhoai-acivation-key
+
+RUN subscription-manager register --org $ORG_ID --activationkey $ACTIVATION_KEY && \
     subscription-manager repos --enable codeready-builder-for-rhel-8-x86_64-rpms \
                                --enable rhel-8-for-x86_64-appstream-rpms && \
 
