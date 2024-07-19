@@ -25,10 +25,10 @@ ARG SOURCE_CODE
 USER root
 
 # Register the system
-subscription-manager register --org $(cat "/activation-key/orgid") --activationkey $(cat "/activation-key/activationkey")
+RUN subscription-manager register --org $(cat "/activation-key/orgid") --activationkey $(cat "/activation-key/activationkey")
 
 # Enable the necessary repositories
-subscription-manager repos --enable codeready-builder-for-rhel-8-x86_64-rpms \
+RUN subscription-manager repos --enable codeready-builder-for-rhel-8-x86_64-rpms \
                            --enable rhel-8-for-x86_64-appstream-rpms
 
 # Upgrade existing packages, install new packages, and clean up
