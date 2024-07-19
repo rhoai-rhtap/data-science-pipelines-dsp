@@ -28,8 +28,7 @@ ENV ORG_ID=15177711
 ENV ACTIVATION_KEY=rhoai-acivation-key
 
 RUN subscription-manager register --org $ORG_ID --activationkey $ACTIVATION_KEY && \
-    subscription-manager repos --enable codeready-builder-for-rhel-8-x86_64-rpms \
-                               --enable rhel-8-for-x86_64-appstream-rpms && \
+    subscription-manager repos --enable rhel-8-for-x86_64-appstream-rpms
 
 # Upgrade existing packages, install new packages, and clean up
 dnf upgrade -y && \
