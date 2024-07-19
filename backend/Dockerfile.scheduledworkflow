@@ -24,12 +24,9 @@ ARG SOURCE_CODE
 ## Switch to root as required for some operations
 USER root
 
-# Register the system
-RUN subscription-manager register --org $(cat "/activation-key/orgid") --activationkey $(cat "/activation-key/activationkey")
-
-# Enable the necessary repositories
-RUN subscription-manager repos --enable codeready-builder-for-rhel-8-x86_64-rpms \
-                           --enable rhel-8-for-x86_64-appstream-rpms
+RUN subscription-manager register --org 15177711 --activationkey rhoai-acivation-key && \
+    subscription-manager repos --enable codeready-builder-for-rhel-8-x86_64-rpms \
+                               --enable rhel-8-for-x86_64-appstream-rpms && \
 
 # Upgrade existing packages, install new packages, and clean up
 dnf upgrade -y && \
