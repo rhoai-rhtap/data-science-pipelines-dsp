@@ -19,10 +19,10 @@ ARG SOURCE_CODE=.
 FROM registry.access.redhat.com/ubi8/go-toolset:1.21 as builder
 
 ## Build args to be used at this step
-ARG SOURCE_CODE
+##ARG SOURCE_CODE
 
 ## Switch to root as required for some operations
-USER root
+##USER root
 
 RUN subscription-manager register --org 15177711 --activationkey rhoai-acivation-key && \
     subscription-manager repos --enable codeready-builder-for-rhel-8-x86_64-rpms \
