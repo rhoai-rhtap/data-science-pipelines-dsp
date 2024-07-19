@@ -27,6 +27,9 @@ USER root
 ENV ORG_ID=15177711
 ENV ACTIVATION_KEY=rhoai-acivation-key
 
+RUN echo "ORG_ID: $ORG_ID" && \
+    echo "ACTIVATION_KEY: $ACTIVATION_KEY"
+
 RUN subscription-manager register --org $ORG_ID --activationkey $ACTIVATION_KEY && \
     subscription-manager repos --enable rhel-8-for-x86_64-appstream-rpms
 
