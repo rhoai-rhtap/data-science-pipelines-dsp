@@ -19,20 +19,12 @@ ARG SOURCE_CODE=.
 FROM registry.access.redhat.com/ubi8/go-toolset:1.21 as builder
 
 ## Build args to be used at this step
-##ARG SOURCE_CODE
+ARG SOURCE_CODE
 
 ## Switch to root as required for some operations
 USER root
 
-ENV ORG_ID=15177711
-ENV ACTIVATION_KEY=rhoai-acivation-key
-
-RUN subscription-manager register --org $ORG_ID --activationkey $ACTIVATION_KEY && \
-    subscription-manager repos --enable rhel-8-for-x86_64-appstream-rpms
-
-# Upgrade existing packages, install new packages, and clean up
-dnf upgrade -y && \
-    dnf -y install bash \
+RUN dnf install -y bash \
                    git \
                    openssh \
                    gcc && \

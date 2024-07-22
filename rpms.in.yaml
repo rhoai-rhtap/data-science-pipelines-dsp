@@ -1,0 +1,8 @@
+contentOrigin:
+  repofiles:
+    - ubi.repo
+packages:
+  - git
+  - jq
+  - dnf
+  - go
