@@ -24,11 +24,11 @@ USER root
 
 RUN dnf install -y cmake clang openssl
 
-COPY ${SOURCE_CODE}/go.mod ./
-COPY ${SOURCE_CODE}/go.sum ./
+COPY ./go.mod ./
+COPY ./go.sum ./
 
 # Copy the source
-COPY ${SOURCE_CODE}/ ./
+COPY ./ ./
 
 RUN GO111MODULE=on go build -o /bin/apiserver ./backend/src/apiserver/ && \
     dnf clean all
@@ -37,8 +37,8 @@ FROM registry.access.redhat.com/ubi8/ubi-minimal:latest
 
 WORKDIR /bin
 
-COPY --from=builder /opt/app-root/src/backend/src/apiserver/config/ /config
-COPY --from=builder /bin/apiserver /bin/apiserver
+COPY --from=registry.access.redhat.com/ubi8/go-toolset:1.21 /opt/app-root/src/backend/src/apiserver/config/ /config
+COPY --from=registry.access.redhat.com/ubi8/go-toolset:1.21 /bin/apiserver /bin/apiserver
 
 RUN chmod +x /bin/apiserver
 
