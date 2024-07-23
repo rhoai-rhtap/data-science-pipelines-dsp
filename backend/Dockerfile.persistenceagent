@@ -25,10 +25,7 @@ ARG SOURCE_CODE
 
 USER root
 
-# RUN dnf install -y bash \
-                   git \
-                   openssh \
-                   gcc 
+# RUN dnf install -y bash 
 
 COPY ${SOURCE_CODE}/go.mod ./
 COPY ${SOURCE_CODE}/go.sum ./
