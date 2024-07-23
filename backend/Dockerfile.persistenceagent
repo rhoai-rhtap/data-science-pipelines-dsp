@@ -28,7 +28,7 @@ USER root
 RUN dnf install -y bash \
                    git \
                    openssh \
-                   gcc && \
+                   gcc 
 
 COPY ${SOURCE_CODE}/go.mod ./
 COPY ${SOURCE_CODE}/go.sum ./
