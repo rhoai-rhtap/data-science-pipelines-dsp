@@ -6,4 +6,3 @@ packages:
   - git
   - openssh
   - gcc
-  - tzdata.noarch
