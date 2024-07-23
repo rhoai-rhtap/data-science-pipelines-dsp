@@ -37,8 +37,8 @@ FROM registry.access.redhat.com/ubi8/ubi-minimal:latest
 
 WORKDIR /bin
 
-COPY --from=registry.access.redhat.com/ubi8/go-toolset:1.21 /opt/app-root/src/backend/src/apiserver/config/ /config
-COPY --from=registry.access.redhat.com/ubi8/go-toolset:1.21 /bin/apiserver /bin/apiserver
+COPY registry.access.redhat.com/ubi8/go-toolset:1.21 /opt/app-root/src/backend/src/apiserver/config/ /config
+COPY registry.access.redhat.com/ubi8/go-toolset:1.21 /bin/apiserver /bin/apiserver
 
 RUN chmod +x /bin/apiserver
 
