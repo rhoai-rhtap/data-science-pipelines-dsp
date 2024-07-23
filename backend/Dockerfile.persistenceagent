@@ -25,7 +25,7 @@ ARG SOURCE_CODE
 
 USER root
 
-RUN dnf install -y bash \
+# RUN dnf install -y bash \
                    git \
                    openssh \
                    gcc 
