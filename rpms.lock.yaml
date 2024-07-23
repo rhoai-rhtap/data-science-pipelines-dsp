@@ -39,27 +39,6 @@ arches:
     name: git-core-doc
     evr: 2.43.5-1.el8_10
     sourcerpm: git-2.43.5-1.el8_10.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/appstream/os/Packages/g/golang-1.21.11-1.module+el8.10.0+21986+2112108a.x86_64.rpm
-    repoid: ubi-8-appstream-rpms
-    size: 775530
-    checksum: sha256:98bbfe60e955084da7b4e14dddd7c2bfbba00ab7b95301565bb3ef3b8e18693c
-    name: golang
-    evr: 1.21.11-1.module+el8.10.0+21986+2112108a
-    sourcerpm: golang-1.21.11-1.module+el8.10.0+21986+2112108a.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/appstream/os/Packages/g/golang-bin-1.21.11-1.module+el8.10.0+21986+2112108a.x86_64.rpm
-    repoid: ubi-8-appstream-rpms
-    size: 66708662
-    checksum: sha256:a5f9d3c6766fb4f7197d41364a5f2de94bb22a2baaae303de3136714365d77f4
-    name: golang-bin
-    evr: 1.21.11-1.module+el8.10.0+21986+2112108a
-    sourcerpm: golang-1.21.11-1.module+el8.10.0+21986+2112108a.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/appstream/os/Packages/g/golang-src-1.21.11-1.module+el8.10.0+21986+2112108a.noarch.rpm
-    repoid: ubi-8-appstream-rpms
-    size: 13053574
-    checksum: sha256:42c93232f9d1cd81c01b03fe4d9d2406c2b356014138b2850e9b306e4dd2ecf0
-    name: golang-src
-    evr: 1.21.11-1.module+el8.10.0+21986+2112108a
-    sourcerpm: golang-1.21.11-1.module+el8.10.0+21986+2112108a.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/appstream/os/Packages/i/isl-0.16.1-6.el8.x86_64.rpm
     repoid: ubi-8-appstream-rpms
     size: 861300
@@ -67,13 +46,6 @@ arches:
     name: isl
     evr: 0.16.1-6.el8
     sourcerpm: isl-0.16.1-6.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/appstream/os/Packages/j/jq-1.6-9.el8_10.x86_64.rpm
-    repoid: ubi-8-appstream-rpms
-    size: 207896
-    checksum: sha256:baaa3660d87c4f3c12776e051b7f13835fee8918389a57673519e3389eb7aa3b
-    name: jq
-    evr: 1.6-9.el8_10
-    sourcerpm: jq-1.6-9.el8_10.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/appstream/os/Packages/l/libmpc-1.1.0-9.1.el8.x86_64.rpm
     repoid: ubi-8-appstream-rpms
     size: 62440
@@ -81,20 +53,6 @@ arches:
     name: libmpc
     evr: 1.1.0-9.1.el8
     sourcerpm: libmpc-1.1.0-9.1.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/appstream/os/Packages/l/libxkbcommon-0.9.1-1.el8.x86_64.rpm
-    repoid: ubi-8-appstream-rpms
-    size: 118548
-    checksum: sha256:25b13ea50e21233dc5fccf42da344fbf24605dde38db9b94e49739ae39faa072
-    name: libxkbcommon
-    evr: 0.9.1-1.el8
-    sourcerpm: libxkbcommon-0.9.1-1.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/appstream/os/Packages/o/oniguruma-6.8.2-3.el8.x86_64.rpm
-    repoid: ubi-8-appstream-rpms
-    size: 192632
-    checksum: sha256:1c5c91d8a33987892ec7320c08311a31245be91800aa5879e20d137971bd053f
-    name: oniguruma
-    evr: 6.8.2-3.el8
-    sourcerpm: oniguruma-6.8.2-3.el8.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/appstream/os/Packages/p/perl-Digest-1.17-395.el8.noarch.rpm
     repoid: ubi-8-appstream-rpms
     size: 27624
@@ -172,41 +130,6 @@ arches:
     name: perl-libnet
     evr: 3.11-3.el8
     sourcerpm: perl-libnet-3.11-3.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/appstream/os/Packages/p/pinentry-1.1.0-2.el8.x86_64.rpm
-    repoid: ubi-8-appstream-rpms
-    size: 102336
-    checksum: sha256:7bb63c8b955ff7f993877c0323e8bc17c6d85c7a8e844db9e9980a9ca7a227c5
-    name: pinentry
-    evr: 1.1.0-2.el8
-    sourcerpm: pinentry-1.1.0-2.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/appstream/os/Packages/p/python3-unbound-1.16.2-5.el8_9.6.x86_64.rpm
-    repoid: ubi-8-appstream-rpms
-    size: 133428
-    checksum: sha256:2d5a809782f47b7f79cbfb2b041278e0fba2a071da58dee2fa81fe90976e7177
-    name: python3-unbound
-    evr: 1.16.2-5.el8_9.6
-    sourcerpm: unbound-1.16.2-5.el8_9.6.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/appstream/os/Packages/u/unbound-libs-1.16.2-5.el8_9.6.x86_64.rpm
-    repoid: ubi-8-appstream-rpms
-    size: 591008
-    checksum: sha256:34e464678ec8b930568a5cb9d75825dea3f506cf27e08cbbb646bd7aaa937a6a
-    name: unbound-libs
-    evr: 1.16.2-5.el8_9.6
-    sourcerpm: unbound-1.16.2-5.el8_9.6.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/appstream/os/Packages/x/xkeyboard-config-2.28-1.el8.noarch.rpm
-    repoid: ubi-8-appstream-rpms
-    size: 801000
-    checksum: sha256:340b3c65becfca3d39f2afeed9659505a33ee870270c4d115d9fefe8929ff806
-    name: xkeyboard-config
-    evr: 2.28-1.el8
-    sourcerpm: xkeyboard-config-2.28-1.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/a/acl-2.2.53-3.el8.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 83124
-    checksum: sha256:a22d3f42d7a49ab2e8e7d1c831a80fca159a649a8969ab0617ab93b24df5fa20
-    name: acl
-    evr: 2.2.53-3.el8
-    sourcerpm: acl-2.2.53-3.el8.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/a/audit-libs-3.1.2-1.el8.x86_64.rpm
     repoid: ubi-8-baseos-rpms
     size: 127692
@@ -305,20 +228,6 @@ arches:
     name: crypto-policies-scripts
     evr: 20230731-1.git3177e06.el8
     sourcerpm: crypto-policies-20230731-1.git3177e06.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/c/cryptsetup-libs-2.3.7-7.el8.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 500812
-    checksum: sha256:acb20a87af67ceb58dfa295e50c06674511c62d2499d3076a44390d7e3ce0f85
-    name: cryptsetup-libs
-    evr: 2.3.7-7.el8
-    sourcerpm: cryptsetup-2.3.7-7.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/c/curl-7.61.1-34.el8.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 361924
-    checksum: sha256:25b89cfc8ebb2eb6328b7cd3040622cddd272759077243039f0bf87821fe22dc
-    name: curl
-    evr: 7.61.1-34.el8
-    sourcerpm: curl-7.61.1-34.el8.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/c/cyrus-sasl-lib-2.1.27-6.el8_5.x86_64.rpm
     repoid: ubi-8-baseos-rpms
     size: 126324
@@ -326,104 +235,6 @@ arches:
     name: cyrus-sasl-lib
     evr: 2.1.27-6.el8_5
     sourcerpm: cyrus-sasl-2.1.27-6.el8_5.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/d/dbus-1.12.8-26.el8.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 43292
-    checksum: sha256:5426567ee5fe19e84dbe8c06c73602d588b193e6bb77b2becc31c773fafeb469
-    name: dbus
-    evr: 1:1.12.8-26.el8
-    sourcerpm: dbus-1.12.8-26.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/d/dbus-common-1.12.8-26.el8.noarch.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 48092
-    checksum: sha256:3093c5c1356bc92805a6821f9242a7fc947bbaa1ff427d310dc397f4ea38ef3e
-    name: dbus-common
-    evr: 1:1.12.8-26.el8
-    sourcerpm: dbus-1.12.8-26.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/d/dbus-daemon-1.12.8-26.el8.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 247064
-    checksum: sha256:e2f321553b0a92fee5637e5837a35dbe7baf2b4b4f7fe9b2f1a9b66c8a6cdb85
-    name: dbus-daemon
-    evr: 1:1.12.8-26.el8
-    sourcerpm: dbus-1.12.8-26.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/d/dbus-libs-1.12.8-26.el8.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 189528
-    checksum: sha256:57a38545641fdd14a7887d187fe147d2ca0a22e5a292b9ac5daa2018cc67ed7e
-    name: dbus-libs
-    evr: 1:1.12.8-26.el8
-    sourcerpm: dbus-1.12.8-26.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/d/dbus-tools-1.12.8-26.el8.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 88560
-    checksum: sha256:373d4320fbcb4e823fdf5ad07dbb39805a71a249429e1eff0575bc336ae5634e
-    name: dbus-tools
-    evr: 1:1.12.8-26.el8
-    sourcerpm: dbus-1.12.8-26.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/d/device-mapper-1.02.181-14.el8.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 387904
-    checksum: sha256:419e668ce73f09feabd5d542b76502c98c44c7267c66af876c6fea2e2e3d0f5f
-    name: device-mapper
-    evr: 8:1.02.181-14.el8
-    sourcerpm: lvm2-2.03.14-14.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/d/device-mapper-libs-1.02.181-14.el8.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 420940
-    checksum: sha256:1650f9839c259b6d066bedbb7df27a63e6b95597bcb86892632611677bc8e509
-    name: device-mapper-libs
-    evr: 8:1.02.181-14.el8
-    sourcerpm: lvm2-2.03.14-14.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/d/diffutils-3.6-6.el8.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 367420
-    checksum: sha256:f7fc94ac5b5df2051aa2811c0cebecd7e04353ac871f1a792bc6c68f2c2aa6ce
-    name: diffutils
-    evr: 3.6-6.el8
-    sourcerpm: diffutils-3.6-6.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/d/dnf-4.7.0-20.el8.noarch.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 556048
-    checksum: sha256:9a2d668faaf61dd49233cb68e5f0e4085e8d12b7282eec2753762a974c212068
-    name: dnf
-    evr: 4.7.0-20.el8
-    sourcerpm: dnf-4.7.0-20.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/d/dnf-data-4.7.0-20.el8.noarch.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 160916
-    checksum: sha256:d9014bd635e1fb3b52af690606e184276ce0563ade7b1f03e434a5045f0f4398
-    name: dnf-data
-    evr: 4.7.0-20.el8
-    sourcerpm: dnf-4.7.0-20.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/e/elfutils-debuginfod-client-0.190-2.el8.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 77672
-    checksum: sha256:51719dfe1f9b9bc7570beb4e47d79dec1d5307680adb2b0debd7c266604e4e8d
-    name: elfutils-debuginfod-client
-    evr: 0.190-2.el8
-    sourcerpm: elfutils-0.190-2.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/e/elfutils-default-yama-scope-0.190-2.el8.noarch.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 53904
-    checksum: sha256:345728ee47941f7589211afbc839edb2101a4f2a584afd371c8dfb60c54aeeb3
-    name: elfutils-default-yama-scope
-    evr: 0.190-2.el8
-    sourcerpm: elfutils-0.190-2.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/e/elfutils-libelf-0.190-2.el8.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 238212
-    checksum: sha256:a3dd5e89bf3684b92e58205c5982921ecacbecce5f868477d0ccdd9fe779d8cf
-    name: elfutils-libelf
-    evr: 0.190-2.el8
-    sourcerpm: elfutils-0.190-2.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/e/elfutils-libs-0.190-2.el8.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 312392
-    checksum: sha256:d04814c95b050f76d7f05bc2606b08f643c3b857637f5275ccfff445df505b7e
-    name: elfutils-libs
-    evr: 0.190-2.el8
-    sourcerpm: elfutils-0.190-2.el8.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/e/emacs-filesystem-26.1-11.el8.noarch.rpm
     repoid: ubi-8-baseos-rpms
     size: 71796
@@ -438,13 +249,6 @@ arches:
     name: expat
     evr: 2.2.5-13.el8_10
     sourcerpm: expat-2.2.5-13.el8_10.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/f/file-libs-5.33-26.el8.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 557180
-    checksum: sha256:3576169d440647ebfbcdda7bdd53c250a1fba14c7c1cad6e96a58e8f7e6b7ab9
-    name: file-libs
-    evr: 5.33-26.el8
-    sourcerpm: file-5.33-26.el8.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/f/filesystem-3.8-6.el8.x86_64.rpm
     repoid: ubi-8-baseos-rpms
     size: 1135804
@@ -473,13 +277,6 @@ arches:
     name: gdbm-libs
     evr: 1:1.18-2.el8
     sourcerpm: gdbm-1.18-2.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/g/glib2-2.56.4-162.el8.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 2613288
-    checksum: sha256:1b43aaaa275d7c3dcb1dc4f55f45dc4052377e7f544b201c9a81b87acdaac9a5
-    name: glib2
-    evr: 2.56.4-162.el8
-    sourcerpm: glib2-2.56.4-162.el8.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/g/glibc-2.28-251.el8_10.2.x86_64.rpm
     repoid: ubi-8-baseos-rpms
     size: 2353860
@@ -529,34 +326,6 @@ arches:
     name: gmp
     evr: 1:6.1.2-11.el8
     sourcerpm: gmp-6.1.2-11.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/g/gnupg2-2.2.20-3.el8_6.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 2518940
-    checksum: sha256:913a0d476d71c27ec1d678e5eb20c70cae7905d5b8681a254b750a838d0c0f2f
-    name: gnupg2
-    evr: 2.2.20-3.el8_6
-    sourcerpm: gnupg2-2.2.20-3.el8_6.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/g/gnupg2-smime-2.2.20-3.el8_6.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 289900
-    checksum: sha256:f0cb06ef17ee2ae3d1b0bbba5b7470b844e6185b03008e2da0ef1c807ec80abb
-    name: gnupg2-smime
-    evr: 2.2.20-3.el8_6
-    sourcerpm: gnupg2-2.2.20-3.el8_6.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/g/gnutls-3.6.16-8.el8_9.3.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 1042136
-    checksum: sha256:3e5907589ea399e2f9975856b9def8620966c702db1a8e3bc910cb5de085a15f
-    name: gnutls
-    evr: 3.6.16-8.el8_9.3
-    sourcerpm: gnutls-3.6.16-8.el8_9.3.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/g/gpgme-1.13.1-12.el8.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 343788
-    checksum: sha256:4fa625813b78e2f5d015882ba3a3c98740e2ea1fea7c665c9631387d7780054f
-    name: gpgme
-    evr: 1.13.1-12.el8
-    sourcerpm: gpgme-1.13.1-12.el8.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/g/grep-3.1-6.el8.x86_64.rpm
     repoid: ubi-8-baseos-rpms
     size: 280356
@@ -578,13 +347,6 @@ arches:
     name: gzip
     evr: 1.9-13.el8_5
     sourcerpm: gzip-1.9-13.el8_5.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/i/ima-evm-utils-1.3.2-12.el8.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 65452
-    checksum: sha256:b41c194ecf358e8e6cec46068c4fb6f34780ee2bd65200c367b94170103a8aa9
-    name: ima-evm-utils
-    evr: 1.3.2-12.el8
-    sourcerpm: ima-evm-utils-1.3.2-12.el8.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/i/info-6.5-7.el8.x86_64.rpm
     repoid: ubi-8-baseos-rpms
     size: 203252
@@ -592,20 +354,6 @@ arches:
     name: info
     evr: 6.5-7.el8
     sourcerpm: texinfo-6.5-7.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/j/json-c-0.13.1-3.el8.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 41676
-    checksum: sha256:9bd47c00f8bf9354b06ef159a5aed91ab67c4155ce02752dfe6148314dbb11e1
-    name: json-c
-    evr: 0.13.1-3.el8
-    sourcerpm: json-c-0.13.1-3.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/j/json-glib-1.4.4-1.el8.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 147800
-    checksum: sha256:a1dcfb41bc9a8dc4533ebe66449f0101e4da7548b7f3d6f17e0d815025b9c437
-    name: json-glib
-    evr: 1.4.4-1.el8
-    sourcerpm: json-glib-1.4.4-1.el8.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/k/kernel-headers-4.18.0-553.8.1.el8_10.x86_64.rpm
     repoid: ubi-8-baseos-rpms
     size: 12300988
@@ -620,27 +368,6 @@ arches:
     name: keyutils-libs
     evr: 1.5.10-9.el8
     sourcerpm: keyutils-1.5.10-9.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/k/keyutils-libs-devel-1.5.10-9.el8.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 49216
-    checksum: sha256:7fa4f4d0a7ae769802925335acad2875491a2d5d0e80ccb269e8c2ff03a35e6f
-    name: keyutils-libs-devel
-    evr: 1.5.10-9.el8
-    sourcerpm: keyutils-1.5.10-9.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/k/kmod-libs-25-20.el8.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 70224
-    checksum: sha256:4c586c86bdf99b69ce1c250069f53fceef5b5536b8c9e10018ac25e7e7758126
-    name: kmod-libs
-    evr: 25-20.el8
-    sourcerpm: kmod-25-20.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/k/krb5-devel-1.18.2-28.el8_10.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 575824
-    checksum: sha256:c90da02e822b82257f943c3b379f5b98be4a0b3970b983815e82e8b14054f950
-    name: krb5-devel
-    evr: 1.18.2-28.el8_10
-    sourcerpm: krb5-1.18.2-28.el8_10.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/k/krb5-libs-1.18.2-28.el8_10.x86_64.rpm
     repoid: ubi-8-baseos-rpms
     size: 863320
@@ -662,20 +389,6 @@ arches:
     name: libacl
     evr: 2.2.53-3.el8
     sourcerpm: acl-2.2.53-3.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/l/libarchive-3.3.3-5.el8.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 368640
-    checksum: sha256:af9fc180b9ce78e4a6fc0b7698cef52c063d5e8037e0d01c6e911c2368899cf8
-    name: libarchive
-    evr: 3.3.3-5.el8
-    sourcerpm: libarchive-3.3.3-5.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/l/libassuan-2.5.1-3.el8.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 84768
-    checksum: sha256:862e75a1cf6aa5be750a530c8ce8b999d0b2efe9737e20f37f9f9153a82e56fa
-    name: libassuan
-    evr: 2.5.1-3.el8
-    sourcerpm: libassuan-2.5.1-3.el8.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/l/libattr-2.4.48-3.el8.x86_64.rpm
     repoid: ubi-8-baseos-rpms
     size: 27572
@@ -711,20 +424,6 @@ arches:
     name: libcom_err
     evr: 1.45.6-5.el8
     sourcerpm: e2fsprogs-1.45.6-5.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/l/libcom_err-devel-1.45.6-5.el8.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 39660
-    checksum: sha256:daaa2d9c45c10f613fdf08e0ca4187466bb831046391017f6eb5b54d6b42f4ce
-    name: libcom_err-devel
-    evr: 1.45.6-5.el8
-    sourcerpm: e2fsprogs-1.45.6-5.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/l/libcomps-0.1.18-1.el8.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 84060
-    checksum: sha256:dc0e2e71435cc36ddb20b9c5c0a32566d3aad2f18efca3614efc9dd56cf5ed80
-    name: libcomps
-    evr: 0.1.18-1.el8
-    sourcerpm: libcomps-0.1.18-1.el8.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/l/libcurl-7.61.1-34.el8.x86_64.rpm
     repoid: ubi-8-baseos-rpms
     size: 311008
@@ -739,20 +438,6 @@ arches:
     name: libdb
     evr: 5.3.28-42.el8_4
     sourcerpm: libdb-5.3.28-42.el8_4.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/l/libdb-utils-5.3.28-42.el8_4.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 153272
-    checksum: sha256:6b52102af0aab3b41a5d410b7717713aef3adc48c41015a745c9c5a2ba7b814f
-    name: libdb-utils
-    evr: 5.3.28-42.el8_4
-    sourcerpm: libdb-5.3.28-42.el8_4.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/l/libdnf-0.63.0-19.el8.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 729036
-    checksum: sha256:0e458599310bbeb86e587512913eb3d2cf90e8a82b509622920ecd47ac9e6430
-    name: libdnf
-    evr: 0.63.0-19.el8
-    sourcerpm: libdnf-0.63.0-19.el8.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/l/libedit-3.1-23.20170329cvs.el8.x86_64.rpm
     repoid: ubi-8-baseos-rpms
     size: 104512
@@ -760,13 +445,6 @@ arches:
     name: libedit
     evr: 3.1-23.20170329cvs.el8
     sourcerpm: libedit-3.1-23.20170329cvs.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/l/libevent-2.1.8-5.el8.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 259580
-    checksum: sha256:7e95dc277991981a081f73f4410219a196b7b0d02dbe1ad2ebfce172c215669e
-    name: libevent
-    evr: 2.1.8-5.el8
-    sourcerpm: libevent-2.1.8-5.el8.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/l/libfdisk-2.32.1-46.el8.x86_64.rpm
     repoid: ubi-8-baseos-rpms
     size: 260128
@@ -816,27 +494,6 @@ arches:
     name: libidn2
     evr: 2.2.0-1.el8
     sourcerpm: libidn2-2.2.0-1.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/l/libkadm5-1.18.2-28.el8_10.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 192776
-    checksum: sha256:5856a986260c1dec32265103d42b4ff7001e62c5261710af2c6546b3873f3f47
-    name: libkadm5
-    evr: 1.18.2-28.el8_10
-    sourcerpm: krb5-1.18.2-28.el8_10.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/l/libksba-1.3.5-9.el8_7.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 137536
-    checksum: sha256:7d0ce9d935d8a8a35c10b242f01a18f45aac14319e4e63629a21155e46ddb10d
-    name: libksba
-    evr: 1.3.5-9.el8_7
-    sourcerpm: libksba-1.3.5-9.el8_7.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/l/libmodulemd-2.13.0-1.el8.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 238696
-    checksum: sha256:0c0fca928fce9b38762624ef06e6672189a386dbb15b28ddbfdb51492357b09c
-    name: libmodulemd
-    evr: 2.13.0-1.el8
-    sourcerpm: libmodulemd-2.13.0-1.el8.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/l/libmount-2.32.1-46.el8.x86_64.rpm
     repoid: ubi-8-baseos-rpms
     size: 242716
@@ -879,53 +536,11 @@ arches:
     name: libpwquality
     evr: 1.4.4-6.el8
     sourcerpm: libpwquality-1.4.4-6.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/l/librepo-1.14.2-5.el8.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 95700
-    checksum: sha256:9c9086818b42e8242f40e5dc37d3a18c018d76988e16493b2c6b9b6282cf2834
-    name: librepo
-    evr: 1.14.2-5.el8
-    sourcerpm: librepo-1.14.2-5.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/l/libreport-filesystem-2.9.5-15.el8.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 21536
-    checksum: sha256:4a95dbaad30dfee445cb89fa5c047f56b4588c16a5442ef4043158f709c857c9
-    name: libreport-filesystem
-    evr: 2.9.5-15.el8
-    sourcerpm: libreport-2.9.5-15.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/l/librhsm-0.0.3-5.el8.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 35332
-    checksum: sha256:214046cb0a12015ed9710e7b50eec749a990c4f9c4e460c2595ed3399d8fc4e5
-    name: librhsm
-    evr: 0.0.3-5.el8
-    sourcerpm: librhsm-0.0.3-5.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/l/libseccomp-2.5.2-1.el8.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 72932
-    checksum: sha256:cf08ceb39359d00f9da0abaf15e799725288f8cd3a54d075fb37b76967776949
-    name: libseccomp
-    evr: 2.5.2-1.el8
-    sourcerpm: libseccomp-2.5.2-1.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/l/libsecret-0.18.6-1.el8.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 166868
-    checksum: sha256:1dc1dbd0aa4dad715b3242468d4841f2f35bf6aa60d8e1928ee692784b12da1e
-    name: libsecret
-    evr: 0.18.6-1.el8
-    sourcerpm: libsecret-0.18.6-1.el8.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/l/libselinux-2.9-8.el8.x86_64.rpm
     repoid: ubi-8-baseos-rpms
     size: 169708
     checksum: sha256:7ed949a9db975f9bbd5e5309cc44b2f7e1b01618a34408ad66fd850e3fa5426c
     name: libselinux
-    evr: 2.9-8.el8
-    sourcerpm: libselinux-2.9-8.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/l/libselinux-devel-2.9-8.el8.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 204972
-    checksum: sha256:5f07fe31b09772cfc0c1785504ea36f776026c057611f1e07d632376aaa1d916
-    name: libselinux-devel
     evr: 2.9-8.el8
     sourcerpm: libselinux-2.9-8.el8.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/l/libsemanage-2.9-9.el8_6.x86_64.rpm
@@ -942,13 +557,6 @@ arches:
     name: libsepol
     evr: 2.9-3.el8
     sourcerpm: libsepol-2.9-3.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/l/libsepol-devel-2.9-3.el8.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 89044
-    checksum: sha256:1e1cdf795bc1ec2f86617359de5aaf05f63924679dcffb11e7e3d577ce856d47
-    name: libsepol-devel
-    evr: 2.9-3.el8
-    sourcerpm: libsepol-2.9-3.el8.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/l/libsigsegv-2.11-5.el8.x86_64.rpm
     repoid: ubi-8-baseos-rpms
     size: 31012
@@ -963,13 +571,6 @@ arches:
     name: libsmartcols
     evr: 2.32.1-46.el8
     sourcerpm: util-linux-2.32.1-46.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/l/libsolv-0.7.20-6.el8.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 385236
-    checksum: sha256:2d848cc246472976bb95c9615169ef9a10738e77f6f1e4eb16a8222577a68401
-    name: libsolv
-    evr: 0.7.20-6.el8
-    sourcerpm: libsolv-0.7.20-6.el8.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/l/libssh-0.9.6-14.el8.x86_64.rpm
     repoid: ubi-8-baseos-rpms
     size: 225336
@@ -1012,13 +613,6 @@ arches:
     name: libunistring
     evr: 0.9.9-3.el8
     sourcerpm: libunistring-0.9.9-3.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/l/libusbx-1.0.23-4.el8.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 76088
-    checksum: sha256:09149617095dc52e19cdce1e45c8245e1e92d371bd4d107320ff56788b9977f1
-    name: libusbx
-    evr: 1.0.23-4.el8
-    sourcerpm: libusbx-1.0.23-4.el8.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/l/libutempter-1.1.6-14.el8.x86_64.rpm
     repoid: ubi-8-baseos-rpms
     size: 32564
@@ -1040,13 +634,6 @@ arches:
     name: libverto
     evr: 0.3.2-2.el8
     sourcerpm: libverto-0.3.2-2.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/l/libverto-devel-0.3.2-2.el8.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 18488
-    checksum: sha256:b1c155902a1250ae5beebe1c37e77ff8d4ab2e414324aba15373c6e42570acc0
-    name: libverto-devel
-    evr: 0.3.2-2.el8
-    sourcerpm: libverto-0.3.2-2.el8.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/l/libxcrypt-4.1.1-6.el8.x86_64.rpm
     repoid: ubi-8-baseos-rpms
     size: 74508
@@ -1061,34 +648,6 @@ arches:
     name: libxcrypt-devel
     evr: 4.1.1-6.el8
     sourcerpm: libxcrypt-4.1.1-6.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/l/libxml2-2.9.7-18.el8_10.1.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 713784
-    checksum: sha256:11e6d8640b90b66576a6bf786054c6a0f41e3f95bc0e28c7091c356b96215b57
-    name: libxml2
-    evr: 2.9.7-18.el8_10.1
-    sourcerpm: libxml2-2.9.7-18.el8_10.1.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/l/libyaml-0.1.7-5.el8.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 62872
-    checksum: sha256:018409b1eda8be48a11a5b76b95e82ff1d9002569e0644291532d8424dc31edf
-    name: libyaml
-    evr: 0.1.7-5.el8
-    sourcerpm: libyaml-0.1.7-5.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/l/libzstd-1.4.4-1.el8.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 272364
-    checksum: sha256:45cc50a8b02f9bbbbe2c8c056f34622d15d383f695916ac07821d688fcab1c25
-    name: libzstd
-    evr: 1.4.4-1.el8
-    sourcerpm: zstd-1.4.4-1.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/l/lua-libs-5.3.4-12.el8.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 120792
-    checksum: sha256:1c040f943aba945547ebd7a060f1df910dca5d65cb353d6c7e7edbb51243d4c0
-    name: lua-libs
-    evr: 5.3.4-12.el8
-    sourcerpm: lua-5.3.4-12.el8.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/l/lz4-libs-1.8.3-3.el8_4.x86_64.rpm
     repoid: ubi-8-baseos-rpms
     size: 67392
@@ -1124,20 +683,6 @@ arches:
     name: ncurses-libs
     evr: 6.1-10.20180224.el8
     sourcerpm: ncurses-6.1-10.20180224.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/n/nettle-3.4.1-7.el8.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 308276
-    checksum: sha256:51eb082082e78afa70dd64591219c026d11cf7a6adf3771a36624c80be34dc3e
-    name: nettle
-    evr: 3.4.1-7.el8
-    sourcerpm: nettle-3.4.1-7.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/n/npth-1.5-4.el8.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 26836
-    checksum: sha256:4f3c2518a3a02e4cec426928f8e5b28d9318af2b1aeaf7fc77f9d4a313f09740
-    name: npth
-    evr: 1.5-4.el8
-    sourcerpm: npth-1.5-4.el8.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/o/openldap-2.4.46-19.el8_10.x86_64.rpm
     repoid: ubi-8-baseos-rpms
     size: 361192
@@ -1164,13 +709,6 @@ arches:
     size: 727800
     checksum: sha256:b3ebcd7861e92e2970e59a8db2b28c92532ae8bb9d8dbf31c5f07fca18d949f1
     name: openssl
-    evr: 1:1.1.1k-12.el8_9
-    sourcerpm: openssl-1.1.1k-12.el8_9.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/o/openssl-devel-1.1.1k-12.el8_9.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 2439064
-    checksum: sha256:e2e9458cff5023a30e1f60789fe40fcb30f777a3f46cf9635f00c1ca4b937c4f
-    name: openssl-devel
     evr: 1:1.1.1k-12.el8_9
     sourcerpm: openssl-1.1.1k-12.el8_9.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/o/openssl-libs-1.1.1k-12.el8_9.x86_64.rpm
@@ -1220,27 +758,6 @@ arches:
     size: 252604
     checksum: sha256:c504e02ff8af5607b7b23bcdceee78f728ab16a9adc053bd774739d520d95ecb
     name: pcre2
-    evr: 10.32-3.el8_6
-    sourcerpm: pcre2-10.32-3.el8_6.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/p/pcre2-devel-10.32-3.el8_6.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 619372
-    checksum: sha256:48df73d35b1c572e8f8cf9d7318a299ff007776bb5e1677447386b4dcb0e802e
-    name: pcre2-devel
-    evr: 10.32-3.el8_6
-    sourcerpm: pcre2-10.32-3.el8_6.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/p/pcre2-utf16-10.32-3.el8_6.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 234504
-    checksum: sha256:91df207ab87117b29695ad94eccaa1fab29dad76e6ea459647b16ece6d4aad08
-    name: pcre2-utf16
-    evr: 10.32-3.el8_6
-    sourcerpm: pcre2-10.32-3.el8_6.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/p/pcre2-utf32-10.32-3.el8_6.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 225776
-    checksum: sha256:81ca26b980903a64de28fc8ef49383e60a907aa8f573fac8788279b479480de7
-    name: pcre2-utf32
     evr: 10.32-3.el8_6
     sourcerpm: pcre2-10.32-3.el8_6.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/p/perl-Carp-1.42-396.el8.noarch.rpm
@@ -1530,41 +1047,6 @@ arches:
     name: publicsuffix-list-dafsa
     evr: 20180723-1.el8
     sourcerpm: publicsuffix-list-20180723-1.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/p/python3-dnf-4.7.0-20.el8.noarch.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 563564
-    checksum: sha256:881a223fb159b237d19ac4d0477db651b6ed6e21e3e949654a9da9ff06d57268
-    name: python3-dnf
-    evr: 4.7.0-20.el8
-    sourcerpm: dnf-4.7.0-20.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/p/python3-gpg-1.13.1-12.el8.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 249780
-    checksum: sha256:cd40ad6c00ba45e955ea163981723032d5f66e4162f9252de227c1640fdc5220
-    name: python3-gpg
-    evr: 1.13.1-12.el8
-    sourcerpm: gpgme-1.13.1-12.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/p/python3-hawkey-0.63.0-19.el8.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 121056
-    checksum: sha256:92dd88b6a97b3cf8abe9d369ccca302cea6c4aaf9a62f2efc577b832d5a25065
-    name: python3-hawkey
-    evr: 0.63.0-19.el8
-    sourcerpm: libdnf-0.63.0-19.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/p/python3-libcomps-0.1.18-1.el8.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 53228
-    checksum: sha256:44f0d32c5f8ddf64ec80f8881272908601282dbad0642a087058e1b1ec24d669
-    name: python3-libcomps
-    evr: 0.1.18-1.el8
-    sourcerpm: libcomps-0.1.18-1.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/p/python3-libdnf-0.63.0-19.el8.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 798944
-    checksum: sha256:80f5f7d3cf650534a57ad2f83d3c6b86d936742ce60812300c9d50a2dc7207d4
-    name: python3-libdnf
-    evr: 0.63.0-19.el8
-    sourcerpm: libdnf-0.63.0-19.el8.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/p/python3-libs-3.6.8-62.el8_10.x86_64.rpm
     repoid: ubi-8-baseos-rpms
     size: 8241948
@@ -1579,13 +1061,6 @@ arches:
     name: python3-pip-wheel
     evr: 9.0.3-24.el8
     sourcerpm: python-pip-9.0.3-24.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/p/python3-rpm-4.14.3-31.el8.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 159020
-    checksum: sha256:90475fa8d603088cf4c759b0e91dbef16a2e1c01f89a7cbdef14a204db196a70
-    name: python3-rpm
-    evr: 4.14.3-31.el8
-    sourcerpm: rpm-4.14.3-31.el8.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/p/python3-setuptools-wheel-39.2.0-7.el8.noarch.rpm
     repoid: ubi-8-baseos-rpms
     size: 295960
@@ -1607,27 +1082,6 @@ arches:
     name: redhat-release
     evr: 8.10-0.3.el8
     sourcerpm: redhat-release-8.10-0.3.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/r/rpm-4.14.3-31.el8.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 557268
-    checksum: sha256:05f900705de4b5ec8432e82d1cde3059fc850b31c7fe0f8a0386eeb6fd1d7a4f
-    name: rpm
-    evr: 4.14.3-31.el8
-    sourcerpm: rpm-4.14.3-31.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/r/rpm-build-libs-4.14.3-31.el8.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 161188
-    checksum: sha256:a78a73383e86da190c3a9a1900fcef3078f29d15085e239452a6dc672aa80eeb
-    name: rpm-build-libs
-    evr: 4.14.3-31.el8
-    sourcerpm: rpm-4.14.3-31.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/r/rpm-libs-4.14.3-31.el8.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 356144
-    checksum: sha256:e9a56aaecdd4ce33d1234dff5088022f4fb67d6e9c07b62dd8c103a6baae6a36
-    name: rpm-libs
-    evr: 4.14.3-31.el8
-    sourcerpm: rpm-4.14.3-31.el8.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/s/sed-4.5-5.el8.x86_64.rpm
     repoid: ubi-8-baseos-rpms
     size: 305372
@@ -1649,13 +1103,6 @@ arches:
     name: shadow-utils
     evr: 2:4.6-22.el8
     sourcerpm: shadow-utils-4.6-22.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/s/shared-mime-info-1.9-4.el8.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 336852
-    checksum: sha256:8fef82a0871742672010e7b990d7c67a6bdfc47eb58eef85f963b8abffd9c545
-    name: shared-mime-info
-    evr: 1.9-4.el8
-    sourcerpm: shared-mime-info-1.9-4.el8.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/s/sqlite-libs-3.26.0-19.el8_9.x86_64.rpm
     repoid: ubi-8-baseos-rpms
     size: 595084
@@ -1663,13 +1110,6 @@ arches:
     name: sqlite-libs
     evr: 3.26.0-19.el8_9
     sourcerpm: sqlite-3.26.0-19.el8_9.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/s/systemd-239-82.el8_10.1.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 3824212
-    checksum: sha256:e0ba57d3bd3f0604f21586cb5ba0d705a8296e3b89816a74ebabefbfbad3f151
-    name: systemd
-    evr: 239-82.el8_10.1
-    sourcerpm: systemd-239-82.el8_10.1.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/s/systemd-libs-239-82.el8_10.1.x86_64.rpm
     repoid: ubi-8-baseos-rpms
     size: 1195276
@@ -1677,34 +1117,6 @@ arches:
     name: systemd-libs
     evr: 239-82.el8_10.1
     sourcerpm: systemd-239-82.el8_10.1.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/s/systemd-pam-239-82.el8_10.1.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 525296
-    checksum: sha256:47079a079efaea99eb995e5178e42c603ce6744dead9afcca496601400c89110
-    name: systemd-pam
-    evr: 239-82.el8_10.1
-    sourcerpm: systemd-239-82.el8_10.1.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/t/tpm2-tss-2.3.2-6.el8.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 282064
-    checksum: sha256:d6521a0cb3d062bb4c360b117ad8b966c7c4f6bae10e9298576c8ea7c7f1db15
-    name: tpm2-tss
-    evr: 2.3.2-6.el8
-    sourcerpm: tpm2-tss-2.3.2-6.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/t/trousers-0.3.15-2.el8.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 156324
-    checksum: sha256:034e984597ebcc557fa990b949b86c0218b472462e0301726d6e69fd4e240c79
-    name: trousers
-    evr: 0.3.15-2.el8
-    sourcerpm: trousers-0.3.15-2.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/t/trousers-lib-0.3.15-2.el8.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 171688
-    checksum: sha256:e105832fbb20b553e4b8a503352312dfa73eef94c11f82a22b713e334c2e6a1a
-    name: trousers-lib
-    evr: 0.3.15-2.el8
-    sourcerpm: trousers-0.3.15-2.el8.src.rpm
   - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/t/tzdata-2024a-1.el8.noarch.rpm
     repoid: ubi-8-baseos-rpms
     size: 486452
@@ -1731,13 +1143,6 @@ arches:
     size: 105848
     checksum: sha256:7b443e7b008f38c216dd7b36c0d6ce64ececd8b884a91706c7f878140ec5f332
     name: zlib
-    evr: 1.2.11-25.el8
-    sourcerpm: zlib-1.2.11-25.el8.src.rpm
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/z/zlib-devel-1.2.11-25.el8.x86_64.rpm
-    repoid: ubi-8-baseos-rpms
-    size: 59988
-    checksum: sha256:c74f32f85c67944dd993ae858fb29771886ba4b84c45cfa55b4c4e46a1228a60
-    name: zlib-devel
     evr: 1.2.11-25.el8
     sourcerpm: zlib-1.2.11-25.el8.src.rpm
   source: []

@@ -2,7 +2,7 @@ contentOrigin:
   repofiles:
     - ubi.repo
 packages:
+  - bash
   - git
-  - jq
-  - dnf
-  - go
+  - openssh
+  - gcc
