@@ -24,11 +24,11 @@ USER root
 
 RUN dnf install -y cmake clang openssl
 
-COPY ./go.mod ./
-COPY ./go.sum ./
+COPY ${SOURCE_CODE}/go.mod ./
+COPY ${SOURCE_CODE}/go.sum ./
 
 # Copy the source
-COPY ./ ./
+COPY ${SOURCE_CODE}/ ./
 
 RUN GO111MODULE=on go build -o /bin/apiserver ./backend/src/apiserver/ && \
     dnf clean all
