@@ -194,7 +194,7 @@ spec:
       - name: input
         value: $(params.prefetch-input)
       - name: dev-package-managers
-        value: $(params.prefetch-dev-package-managers-enabled)
+        value: "true"
       runAfter:
       - clone-repository
       taskRef:
