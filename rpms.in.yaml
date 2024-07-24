@@ -2,8 +2,6 @@ contentOrigin:
   repofiles:
     - ubi.repo
 packages:
-  - bash
-  - git
-  - openssh
-  - gcc
-  - tzdata.noarch
+  - cmake 
+  - clang 
+  - openssl
