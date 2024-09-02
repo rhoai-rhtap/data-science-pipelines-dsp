@@ -35,7 +35,7 @@ COPY go.sum ./
 # Copy the source
 COPY ${SOURCE_CODE}/ ./
 
-RUN GO111MODULE=on go build -o /bin/apiserver ./backend/src/apiserver/ && \
+RUN GO111MODULE=on go build -o /bin/apiserver ./src/apiserver/ && \
     dnf clean all
 
 FROM registry.access.redhat.com/ubi8/ubi-minimal:latest
