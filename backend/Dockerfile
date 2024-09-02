@@ -23,9 +23,11 @@ ARG SOURCE_CODE
 USER root
 
 # RUN dnf install -y cmake clang openssl
-RUN dnf module enable -y clang
+#RUN dnf module enable -y clang
 
-RUN dnf install -y cmake clang openssl --disablerepo=* --enablerepo=ubi-8-appstream-rpms --enablerepo=ubi-8-baseos-rpms
+#RUN dnf install -y cmake clang openssl --disablerepo=* --enablerepo=ubi-8-appstream-rpms --enablerepo=ubi-8-baseos-rpms
+
+RUN dnf install -y cmake clang openssl --setopt=ubi-8-appstream-rpms.module_hotfixes=1
 
 COPY ${SOURCE_CODE}/go.mod ./
 COPY ${SOURCE_CODE}/go.sum ./
