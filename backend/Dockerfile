@@ -29,8 +29,8 @@ USER root
 
 RUN dnf install -y cmake clang openssl --setopt=ubi-8-appstream-rpms.module_hotfixes=1
 
-COPY ./go.mod ./
-COPY ./go.sum ./
+COPY go.mod ./
+COPY go.sum ./
 
 # Copy the source
 COPY ${SOURCE_CODE}/ ./
