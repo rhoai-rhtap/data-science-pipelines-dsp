@@ -22,13 +22,16 @@ ARG SOURCE_CODE
 
 USER root
 
-RUN dnf install -y cmake clang openssl
+# RUN dnf install -y cmake clang openssl
+RUN dnf module enable -y clang
 
-COPY ./go.mod ./
-COPY ./go.sum ./
+RUN dnf install -y cmake clang openssl --disablerepo=* --enablerepo=ubi-8-appstream-rpms --enablerepo=ubi-8-baseos-rpms
+
+COPY ${SOURCE_CODE}/go.mod ./
+COPY ${SOURCE_CODE}/go.sum ./
 
 # Copy the source
-COPY ./ ./
+COPY ${SOURCE_CODE}/ ./
 
 RUN GO111MODULE=on go build -o /bin/apiserver ./backend/src/apiserver/ && \
     dnf clean all
@@ -37,15 +40,15 @@ FROM registry.access.redhat.com/ubi8/ubi-minimal:latest
 
 WORKDIR /bin
 
-COPY --from=builder /opt/app-root/src/backend/src/apiserver/config/ /config
-COPY --from=builder /bin/apiserver /bin/apiserver
+COPY --from=0 /opt/app-root/src/backend/src/apiserver/config/ /config
+COPY --from=0 /bin/apiserver /bin/apiserver
 
 RUN chmod +x /bin/apiserver
 
 USER root
 
 # Adding CA certificate so API server can download pipeline through URL and wget is used for liveness/readiness probe command
-RUN microdnf install -y ca-certificates wget
+#RUN microdnf install -y ca-certificates wget (already installed)
 
 USER 1001
 
