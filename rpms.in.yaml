@@ -1,0 +1,8 @@
+contentOrigin:
+  repofiles:
+    - ubi.repo
+packages:
+  - cmake
+  - clang
+  - openssl
+  - ca-certificates
