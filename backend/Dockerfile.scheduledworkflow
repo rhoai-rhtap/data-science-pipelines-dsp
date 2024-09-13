@@ -24,12 +24,9 @@ ARG SOURCE_CODE
 ## Switch to root as required for some operations
 USER root
 
-RUN dnf upgrade -y && \
-    dnf install -y bash \
-                   git \
-                   openssh \
-                   gcc && \
-    dnf clean all && rm -rf /var/cache/yum
+#RUN dnf upgrade -y
+
+#RUN dnf install -y bash git openssh gcc
 
 
 COPY ${SOURCE_CODE}/go.mod ./
