@@ -4,5 +4,11 @@ contentOrigin:
 packages:
   - git
   - bash
-  - openssh 
+  - openssh
   - gcc
+  - tzdata
+  - cmake
+  - clang
+  - openssl
+  - ca-certificates
+  - wget
