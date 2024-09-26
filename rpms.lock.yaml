@@ -237,7 +237,7 @@ arches:
     sourcerpm: setools-4.3.0-5.el8.src.rpm
   source: []
   module_metadata:
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/appstream/os/repodata/85b9c7eff3f6e7a8d4cf9b22de8fec4b7de1335967f0c0f618f0961537271378-modules.yaml.gz
+  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/appstream/os/repodata/d78c6277810203c3c4930929904bd90fe6147aa7474ebf606c756a1570f3b6ef-modules.yaml.gz
     repoid: ubi-8-appstream-rpms
     size: 59008
-    checksum: sha256:85b9c7eff3f6e7a8d4cf9b22de8fec4b7de1335967f0c0f618f0961537271378
+    checksum: sha256:d78c6277810203c3c4930929904bd90fe6147aa7474ebf606c756a1570f3b6ef
