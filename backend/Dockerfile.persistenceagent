@@ -42,13 +42,7 @@ COPY --from=builder /bin/persistence_agent /bin/persistence_agent
 
 ENV NAMESPACE ""
 
-# Set Workflow TTL to 1 day. The way to use a different value for a particular Kubeflow Pipelines deployment is demonstrated in manifests/kustomize/base/pipeline/ml-pipeline-persistenceagent-deployment.yaml
-ENV TTL_SECONDS_AFTER_WORKFLOW_FINISH 86400
-
-# NUM_WORKERS indicates now many worker goroutines
-ENV NUM_WORKERS 2
-
-CMD persistence_agent --logtostderr=true --namespace=${NAMESPACE} --ttlSecondsAfterWorkflowFinish=${TTL_SECONDS_AFTER_WORKFLOW_FINISH} --numWorker ${NUM_WORKERS}
+CMD /bin/controller --logtostderr=true --namespace=${NAMESPACE}
 
 LABEL name="ds-pipelines-persistenceagent" \
       summary="DSP persistenceagent"
