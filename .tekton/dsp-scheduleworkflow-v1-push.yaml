@@ -1,7 +1,6 @@
 apiVersion: tekton.dev/v1
 kind: PipelineRun
 metadata:
-#test
   annotations:
     build.appstudio.openshift.io/repo: https://github.com/rhoai-rhtap/data-science-pipelines-dsp?rev={{revision}}
     build.appstudio.redhat.com/commit_sha: '{{revision}}'
@@ -464,7 +463,8 @@ spec:
       optional: true
     - name: netrc
       optional: true
-  taskRunTemplate: {}
+  taskRunTemplate:
+    serviceAccountName: build-pipeline-dsp-scheduleworkflow-v1
   workspaces:
   - name: workspace
     volumeClaimTemplate:
