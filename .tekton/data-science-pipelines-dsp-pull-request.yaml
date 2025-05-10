@@ -31,8 +31,7 @@ spec:
   - name: path-context
     value: .
   - name: prefetch-input
-    value: |
-      [{"type": "gomod"}, {"type": "rpm"}] 
+    value: "[{\"type\": \"gomod\"}, {\"type\": \"rpm\"}] \n"
   pipelineSpec:
     finally:
     - name: show-sbom
@@ -464,7 +463,8 @@ spec:
       optional: true
     - name: netrc
       optional: true
-  taskRunTemplate: {}
+  taskRunTemplate:
+    serviceAccountName: build-pipeline-data-science-pipelines-dsp
   workspaces:
   - name: workspace
     volumeClaimTemplate:
