@@ -31,7 +31,7 @@ spec:
   - name: path-context
     value: .
   - name: prefetch-input
-    value: '{"type": "gomod", "path": "."}' 
+    value: '{"type": "gomod", "path": "."}'
   pipelineSpec:
     finally:
     - name: show-sbom
@@ -463,7 +463,8 @@ spec:
       optional: true
     - name: netrc
       optional: true
-  taskRunTemplate: {}
+  taskRunTemplate:
+    serviceAccountName: build-pipeline-launcher-poc
   workspaces:
   - name: workspace
     volumeClaimTemplate:

@@ -1,7 +1,6 @@
 apiVersion: tekton.dev/v1
 kind: PipelineRun
 metadata:
-#test
   annotations:
     build.appstudio.openshift.io/repo: https://github.com/rhoai-rhtap/data-science-pipelines-dsp?rev={{revision}}
     build.appstudio.redhat.com/commit_sha: '{{revision}}'
@@ -29,7 +28,7 @@ spec:
   - name: path-context
     value: .
   - name: prefetch-input
-    value: '{"type": "gomod", "path": "."}' 
+    value: '{"type": "gomod", "path": "."}'
   pipelineSpec:
     finally:
     - name: show-sbom
@@ -461,7 +460,8 @@ spec:
       optional: true
     - name: netrc
       optional: true
-  taskRunTemplate: {}
+  taskRunTemplate:
+    serviceAccountName: build-pipeline-launcher-poc
   workspaces:
   - name: workspace
     volumeClaimTemplate:
