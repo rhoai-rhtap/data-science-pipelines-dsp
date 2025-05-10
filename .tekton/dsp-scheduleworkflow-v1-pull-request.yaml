@@ -466,7 +466,8 @@ spec:
       optional: true
     - name: netrc
       optional: true
-  taskRunTemplate: {}
+  taskRunTemplate:
+    serviceAccountName: build-pipeline-dsp-scheduleworkflow-v1
   workspaces:
   - name: workspace
     volumeClaimTemplate:
